@@ -4,9 +4,7 @@ import dotenv from "dotenv";
 
 const app: Application = express();
 const PORT: number = 3000;
-dotenv.config({ path : './config.env'});
-
-console.log(`is my port`, process.env.PORT);
+dotenv.config();
 
 // Middleware
 app.use(express.json());
