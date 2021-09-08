@@ -1,5 +1,4 @@
-import dotenv from "dotenv";
-dotenv.config({ path: "./env" });
+require("dotenv").config();
 
 export const PORT: number | string = process.env.PORT || 3000;
 export const PG_USERNAME: string = process.env.PG_USERNAME || "root";
